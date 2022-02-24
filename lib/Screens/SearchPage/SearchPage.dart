@@ -86,8 +86,8 @@ class Searchtools extends StatelessWidget {
             ),
           ),
           SizedBox(
-            width: double.infinity, // <-- match_parent
-            height: double.infinity, // <-- match-parent
+            width: 250,
+            height: 50,
             child: ElevatedButton(
               child: const Text('Search'),
               onPressed: () {
