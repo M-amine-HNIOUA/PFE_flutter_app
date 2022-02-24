@@ -106,15 +106,44 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
       //The button navigation bar
-      bottomNavigationBar: CurvedNavigationBar(
-        color: Colors.lightBlue,
-        backgroundColor: Colors.transparent,
-        buttonBackgroundColor: Colors.lightBlue,
-        animationDuration: Duration(milliseconds: 300),
-        height: 50,
-        items: items,
-        index: Sindex,
-        animationCurve: Curves.easeInSine,
+      bottomNavigationBar: BottomNavigationBar(
+        //color: Colors.lightBlue,
+        //  backgroundColor: Colors.transparent,
+        // buttonBackgroundColor: Colors.lightBlue,
+        //animationDuration: Duration(milliseconds: 300),
+        // height: 50,
+        //items: items,
+        //index: Sindex,
+        //animationCurve: Curves.easeInSine,
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'Home',
+            backgroundColor: Colors.lightBlue,
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.chat),
+            label: 'Chat',
+            backgroundColor: Colors.lightBlue,
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.search),
+            label: 'Search',
+            backgroundColor: Colors.lightBlue,
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.favorite),
+            label: 'Favorite',
+            backgroundColor: Colors.lightBlue,
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person),
+            label: 'Profile',
+            backgroundColor: Colors.lightBlue,
+          ),
+        ],
+        currentIndex: Sindex,
+        selectedItemColor: Colors.white,
         onTap: (index) {
           setState(() {
             // For switch the buttom navigation bar and pages at the same time
