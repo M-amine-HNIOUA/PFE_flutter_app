@@ -8,11 +8,13 @@ class ProfilePage extends StatefulWidget {
 }
 
 class _ProfilePageState extends State<ProfilePage> {
+  late String JobType;
+  final Joblist = ['Professor', 'Carpenter', 'Plumber', 'Mechanical', 'Smith'];
+
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.white,
-      child: Center(child: Text('Profile page')),
+      child: Center(child: Text('Profile Page')),
     );
   }
 }

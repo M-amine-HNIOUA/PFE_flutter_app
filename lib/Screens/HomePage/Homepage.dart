@@ -97,6 +97,8 @@ class _HomePageState extends State<HomePage> {
             Sindex = newIndex;
           });
         },
+        allowImplicitScrolling: false,
+        clipBehavior: Clip.hardEdge,
         children: [
           EmpPage(),
           ChatPage(),
@@ -105,7 +107,8 @@ class _HomePageState extends State<HomePage> {
           ProfilePage()
         ],
       ),
-      //The button navigation bar
+
+      //The navigation bar
       bottomNavigationBar: BottomNavigationBar(
         //color: Colors.lightBlue,
         //  backgroundColor: Colors.transparent,
